@@ -47,7 +47,7 @@ app.use("/api", routes);
 const PORT = process.env.PORT || 3000;
 
 // export for Vercel
-module.exports = serverless(app);
+module.exports = app;
 
 // (async () => {
 //   await connectMongo();
