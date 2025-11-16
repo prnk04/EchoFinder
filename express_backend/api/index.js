@@ -49,9 +49,9 @@ const PORT = process.env.PORT || 3000;
 // export for Vercel
 module.exports = app;
 
-// (async () => {
-//   await connectMongo();
-//   app.listen(PORT, () => {
-//     console.log(`Server running on port ${PORT}`);
-//   });
-// })();
+(async () => {
+  await connectMongo();
+  // app.listen(PORT, () => {
+  //   console.log(`Server running on port ${PORT}`);
+  // });
+})();
