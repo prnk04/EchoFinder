@@ -12,7 +12,7 @@ ArtistDetails = {
 };
 
 const trackDetailsSchema = new Schema({
-  song_id: { type: String, unique: true, required: true },
+  song_id: { type: String, required: true },
   all_tags: String,
   artists: { type: [ArtistDetails] },
   //   { type: [ArtistDetails] }, //TODO: add link to artist collection
