@@ -13,8 +13,8 @@ app.use(helmet());
 app.use(express.json());
 app.use(morgan("dev"));
 
-const routes = require("../src/routes/main");
-const { connectMongo } = require("../src/mongo");
+const routes = require("./routes/main");
+const { connectMongo } = require("./mongo");
 
 // CORS
 const allowedOrigins = (process.env.ALLOWED_ORIGINS || "")
@@ -47,7 +47,7 @@ app.use("/api", routes);
 const PORT = process.env.PORT || 3000;
 
 // export for Vercel
-export const handler = serverless(app);
+module.exports = { handler: serverless(app) };
 
 // (async () => {
 //   await connectMongo();
