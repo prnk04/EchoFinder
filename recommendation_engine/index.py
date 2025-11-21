@@ -9,12 +9,12 @@ from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 
 from contextlib import asynccontextmanager
-from server.database.db import MongoConnect
+from database.db import MongoConnect
 
-from server.database.insertTracks import Tracks
-from server.database.insertEmbeddings import EmbeddingsOps
-from server.database.createEmbeddingForSong import SingleSongEmbedding
-from server.recommender.recommendSongsForUser import Recommender
+from database.insertTracks import Tracks
+from database.insertEmbeddings import EmbeddingsOps
+from database.createEmbeddingForSong import SingleSongEmbedding
+from recommender.recommendSongsForUser import Recommender
 
 import os
 from .config import settings
