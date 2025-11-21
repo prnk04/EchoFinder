@@ -1,0 +1,464 @@
+[{
+  "_id": {
+    "$oid": "68ffae06c96340e92c83acc3"
+  },
+  "user_id": "123abc",
+  "__v": 0,
+  "device_id": "drffgh",
+  "fav_genres": [
+    "edm",
+    "rock",
+    "classical"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69008dedc96340e92c83acd3"
+  },
+  "user_id": "6a379e6d-c1c9-4842-8dfc-dde55e40ee5f",
+  "__v": 0,
+  "device_id": "",
+  "fav_genres": [
+    "Pop",
+    "Rock",
+    "Classical"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6901fee6c96340e92c83ace0"
+  },
+  "user_id": "059907a4-7e62-4e3a-97c9-da5e8ffcf98f",
+  "__v": 0,
+  "device_id": "d02105d66f43e44e",
+  "fav_genres": [
+    "R&B",
+    "Metal",
+    "Pop",
+    "Rock"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69024a783a289abf40992b8d"
+  },
+  "user_id": "88d656e0-4dc6-48bf-91c7-38d9294c49a5",
+  "__v": 0,
+  "device_id": "546275cbd5639ed7",
+  "fav_genres": [
+    "Pop",
+    "Rock",
+    "EDM",
+    "Jazz"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69033fa23a289abf40992c0f"
+  },
+  "user_id": "17ae00d0-4c0d-47f0-9319-99b3b4fc2d67",
+  "__v": 0,
+  "device_id": "d02105d66f43e44e",
+  "fav_genres": [
+    "Classical",
+    "Hip-Hop",
+    "Pop",
+    "Jazz",
+    "Country",
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69155c3e3bdeae162d33814d"
+  },
+  "user_id": "prtk94",
+  "__v": 0,
+  "device_id": "dev_id_3",
+  "fav_genres": [
+    "Rock",
+    "Pop",
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69175bd27259bb5218293eca"
+  },
+  "user_id": "020ec442-cc8b-4905-853d-bf2f7de3809b",
+  "__v": 0,
+  "device_id": "d02105d66f43e44e",
+  "fav_genres": [
+    "K-pop",
+    "Rock",
+    "Pop",
+    "Country",
+    "EDM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69175d217259bb5218293ecc"
+  },
+  "user_id": "35332658-5e7c-402a-b6cc-5c995a439481",
+  "__v": 0,
+  "device_id": "d02105d66f43e44e",
+  "fav_genres": [
+    "Rock",
+    "Pop",
+    "Country",
+    "EDM",
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69177aa47259bb5218293ece"
+  },
+  "user_id": null,
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "K-pop",
+    "Pop",
+    "Rock"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691780827259bb5218293eeb"
+  },
+  "user_id": "",
+  "__v": 0,
+  "device_id": "",
+  "fav_genres": [
+    "Rock",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691806f9e4996bd568929b03"
+  },
+  "user_id": "76bceb7d-5642-42d9-9231-f305e19c894e",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop",
+    "K-pop",
+    "EDM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691893ace4996bd568929f6b"
+  },
+  "user_id": "a9a7955b-b3d2-42d0-9560-2697af438bee",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a205e4996bd56892a029"
+  },
+  "user_id": "9a5ffe9f-1587-470a-9a38-8d22a8c6084d",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Jazz",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a455e4996bd56892a204"
+  },
+  "user_id": "bea52676-242d-41ba-9a21-7c0b42deccd2",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a4aae4996bd56892a208"
+  },
+  "user_id": "9b9a3404-4958-4d0d-87eb-47c46ccd2162",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Jazz",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a4f1e4996bd56892a233"
+  },
+  "user_id": "10c01df6-dc82-409d-a7da-ccedda6b28dd",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Metal"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a512e4996bd56892a25e"
+  },
+  "user_id": "8a01a587-902e-47fb-ad4f-b364d239d912",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Classical"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918a8dce4996bd56892a33d"
+  },
+  "user_id": "837b602e-c344-441e-a65c-8c17dd9d05ec",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Classical"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6918af27e4996bd56892a3c6"
+  },
+  "user_id": "3ec13b3c-5734-4c17-a370-053e2889b172",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691976c34b08f3f2f88b9a30"
+  },
+  "user_id": "ee95e1f9-224d-4f48-a687-557a7d842607",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop",
+    "Hip-Hop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919778a4b08f3f2f88b9a32"
+  },
+  "user_id": "c1314884-1637-44ba-8d1b-f7f5964fd0b5",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919783f4b08f3f2f88b9a34"
+  },
+  "user_id": "f8409cd6-149d-4b8c-abed-47182f6efab5",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691979e44b08f3f2f88b9a61"
+  },
+  "user_id": "6f827f39-42c1-4eb7-84fe-5145e5e59f7c",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Hip-Hop",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69197a7d4b08f3f2f88b9ae7"
+  },
+  "user_id": "90a4af5d-a2c8-4049-bdb0-74a143e35e17",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "K-pop",
+    "EDM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69197b2f4b08f3f2f88b9b6a"
+  },
+  "user_id": "e7b685e0-6c86-4d63-8068-98342b39838d",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69197b454b08f3f2f88b9be5"
+  },
+  "user_id": "15069feb-0812-4487-9489-470a26c5df3c",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Hip-Hop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919848c4b08f3f2f88b9bea"
+  },
+  "user_id": "70c7fb74-fd24-4493-948a-8c5eea406d14",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691989894b08f3f2f88b9c15"
+  },
+  "user_id": "872be9cc-0fbe-408d-8a80-2c165cfe1b59",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69198d0b4b08f3f2f88b9c18"
+  },
+  "user_id": "9cded1b5-d874-4ebb-b66a-13ab4c6af36a",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "R&B",
+    "EDM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69198d6a4b08f3f2f88b9c43"
+  },
+  "user_id": "8c128bb7-e8a3-4f98-9603-4acf7902cc94",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69198d924b08f3f2f88b9cb8"
+  },
+  "user_id": "58d1d72f-1a18-4bd9-9fd7-17ce10597774",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691994dd4b08f3f2f88b9d42"
+  },
+  "user_id": "5c0c5087-4d83-4f50-b484-42ac6674cec6",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Metal"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691995204b08f3f2f88b9d6d"
+  },
+  "user_id": "0993ce54-3c70-432f-b60b-5bb3e5ca8dc9",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Pop",
+    "Rock",
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "691996614b08f3f2f88b9e13"
+  },
+  "user_id": "a849276f-39c9-4ac8-8580-0be48bab70b3",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock",
+    "Pop",
+    "K-pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "69199c5b4b08f3f2f88b9e46"
+  },
+  "user_id": "c0306f86-9ca5-4584-8af8-90d10dd40bfa",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919a3bb4b08f3f2f88b9ebb"
+  },
+  "user_id": "f524135b-8e29-4d88-816e-de23c1838414",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Jazz"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919a3e34b08f3f2f88b9f3a"
+  },
+  "user_id": "86b77fde-82ec-4c2e-a7d6-4e5dd10b58ac",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "EDM"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6919a4004b08f3f2f88b9fc4"
+  },
+  "user_id": "106b4f84-3f81-4d4e-8cbb-e2ab39724fc5",
+  "__v": 0,
+  "device_id": "BP3A.251105.015",
+  "fav_genres": [
+    "Rock"
+  ]
+}]

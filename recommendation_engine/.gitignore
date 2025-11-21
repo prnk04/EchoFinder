@@ -3,7 +3,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-*.pkl
 *.h5
 *.sqlite3
 *.db
@@ -16,11 +15,6 @@ venv/
 .idea/
 .vscode/
 
-# Data and models
-data/
-!data/README.md
-rec_models/
-!rec_models/sample_model_info.txt
 
 # Logs & outputs
 logs/
