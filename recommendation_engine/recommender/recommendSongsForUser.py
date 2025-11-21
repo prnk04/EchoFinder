@@ -54,8 +54,6 @@ class Recommender:
             else:
                 self.user_pref_genres = list()
 
-            print("users fav genres are: ", user_pref_genres_list)
-
             # Second, find user fav artists
             user_pref_artists = self.user_fav_artist_collection.find(
                 {"user_id": self.user_id},
@@ -67,12 +65,10 @@ class Recommender:
 
             user_pref_artists_formatted = list()
 
-            print("users fav artists are: ", user_pref_artists_list)
             if user_pref_artists_list and len(user_pref_artists_list) > 0:
                 for pre in user_pref_artists_list:
                     user_pref_artists_formatted.append(pre["fav_artist"])
 
-            print("formatted: ", user_pref_artists_formatted)
             self.user_pref_artists = user_pref_artists_formatted
 
             # Lastly, lets see what songs user has liked
@@ -82,8 +78,6 @@ class Recommender:
             )
             # user_liked_songs_list = list(user_liked_songs)
             user_liked_songs_list = [doc for doc in user_liked_songs]
-
-            print("songs liked by user: ", user_liked_songs_list)
 
             user_liked_songs_formatted = list()
 
@@ -146,18 +140,10 @@ class Recommender:
                 )
             candidate_tracks_genres_list = list(candidate_tracks_genres)
 
-            print(
-                "candidate tracks based on genre pref: ", candidate_tracks_genres_list
-            )
-
             candidate_tracks_tracks = self.tracks_collection.find(
                 {"song_id": {"$in": self.user_liked_songs}}
             )
             candidate_tracks_list = list(candidate_tracks_tracks)
-
-            print(
-                "candidate tracks based on liked trackjs pref: ", candidate_tracks_list
-            )
 
             df1 = pd.DataFrame(candidate_tracks_list_artists)
             df2 = pd.DataFrame(candidate_tracks_genres_list)
@@ -168,7 +154,6 @@ class Recommender:
             df3["type"] = "liked_songs"
 
             candidate_tracks_df = pd.concat([df1, df2, df3], axis=0)
-            print("candifa: ", candidate_tracks_df.head())
             print("shape: ", candidate_tracks_df.shape)
             if candidate_tracks_df.shape[0] == 0:
                 raise MyCustomError("Empty dataframe")
@@ -183,9 +168,6 @@ class Recommender:
 
             print("top tracks columns: ", candidate_tracks_df.columns)
             self.requested_song_ids = candidate_tracks_df["song_id"].values
-            print("requested ids: ", self.requested_song_ids)
-
-            print("candaidate:\n ", candidate_tracks_df)
 
             self.top_tracks = candidate_tracks_df
 
@@ -285,7 +267,7 @@ class Recommender:
 
             all_embeddings_df = pd.DataFrame(all_embeddings_list)
 
-        print("all embeddings df: ", all_embeddings_df.head())
+        # print("all embeddings df: ", all_embeddings_df.head())
         print("all embeddings column: ", all_embeddings_df.columns)
 
         column_list = all_embeddings_df.columns
@@ -293,9 +275,9 @@ class Recommender:
         if "_id" in column_list:
             all_embeddings_df.drop(columns=["_id"], inplace=True)
 
-        print("all embeddings column: ", all_embeddings_df.columns)
+        # print("all embeddings column: ", all_embeddings_df.columns)
 
-        print("and re: ", self.requested_song_ids)
+        # print("and re: ", self.requested_song_ids)
 
         requested_embeddings = all_embeddings_df[
             all_embeddings_df["song_id"].isin(self.requested_song_ids)
@@ -474,7 +456,7 @@ class Recommender:
             self.recommendations = self.sim_df.sort_values(
                 "final_score", ascending=False
             ).head(40)
-            print("rec: ", self.recommendations)
+            # print("rec: ", self.recommendations)
 
         except Exception as e:
             print("Exception while trying to fetch similar songs: ", e)
@@ -495,7 +477,7 @@ class Recommender:
                 )
                 # print(list(songs_data))
                 df = pd.DataFrame(list(songs_data))
-            print("df: ", df)
+            # print("df: ", df)
 
             x = self.recommendations.merge(df, on="song_id", how="left")
             col_list = x.columns.to_list()

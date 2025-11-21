@@ -15,9 +15,10 @@ from database.insertTracks import Tracks
 from database.insertEmbeddings import EmbeddingsOps
 from database.createEmbeddingForSong import SingleSongEmbedding
 from recommender.recommendSongsForUser import Recommender
+from sentence_transformers import SentenceTransformer
 
 import os
-from .config import settings
+from config import settings
 
 
 @asynccontextmanager
@@ -63,8 +64,12 @@ async def lifespan(app: FastAPI):
         print("MongoDB connection initialized.")
 
     embeddingModel = None
-    with open(settings.EMBEDDINGS_MODEL, "rb") as f:
-        embeddingModel = pkl.load(f)
+    # for gpu
+    # with open(settings.EMBEDDINGS_MODEL, "rb") as f:
+    #     embeddingModel = pkl.load(f)
+
+    # for cpu:
+    embeddingModel = SentenceTransformer(settings.EMBEDDINGS_MODEL, device="cpu")
 
     app.state.embeddingModel = embeddingModel
     print("embeddings model loadedd")

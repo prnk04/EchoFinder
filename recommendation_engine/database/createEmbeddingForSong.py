@@ -258,13 +258,6 @@ class SingleSongEmbedding:
         self.createTextualEmbeddings()
         x = self.generate_embedding_numericals()
 
-        print("x is: ", x)
-        print("textual: ", self.textual_embeddings)
-        print("lets see: ", self.track_df[["year_normalized"]])
-        print("lets see: ", self.track_df[["duration_normalized"]])
-        print("lets see: ", self.track_df[["total_play_counts_normalized"]])
-        print("lets see: ", self.track_df[["total_listeners_counts_normalized"]])
-
         numeric_features = (
             self.track_df[
                 [
@@ -320,8 +313,6 @@ class SingleSongEmbedding:
             )
 
         res = self.embeddings_collection.bulk_write(bulk_request)
-        # print(res)
-        print("finished: ", res)
 
     def updateTracksWithEmbeddingStatus(self):
         df_dict = self.track_df.to_dict(orient="records")
@@ -351,7 +342,6 @@ class SingleSongEmbedding:
         self.loadData()
         self.sanitizeDataframe()
         self.generateEmbeddings()
-        print("embeddings: ", self.embeddings)
         print("=======")
 
         self.track_df["embeddings"] = [emb for emb in self.embeddings]

@@ -29,7 +29,6 @@ class EmbeddingsOps:
         print("shape of data: ", self.tracks_list_df.shape)
 
     def concatenateNames(self, artist):
-        print("artist: ", artist)
         artist_names_list = list()
         artist_names = ""
         for i in artist:
@@ -210,13 +209,13 @@ class EmbeddingsOps:
         self.tracks_list_df[
             ["song_id", "spotify_id", "lastfm_id", "embeddings"]
         ].to_csv(
-            "server/data/processed/embeddings_"
+            "data/processed/embeddings_"
             + datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             + ".csv",
             index=False,
         )
         self.tracks_list_df.drop(columns=["embeddings"]).to_csv(
-            "server/data/processed/tracks_data_"
+            "data/processed/tracks_data_"
             + datetime.now().strftime("%Y_%m_%d_%H_%M_%S")
             + ".csv",
             index=False,
@@ -244,13 +243,9 @@ class EmbeddingsOps:
             )
 
         res = self.embeddings_collection.bulk_write(bulk_request)
-        # print(res)
-        print("finished: ", res)
 
     def updateTracksWithEmbeddingStatus(self):
         df_dict = self.tracks_list_df.to_dict(orient="records")
-        print(len(df_dict))
-
         bulk_request = []
 
         for t in df_dict:
@@ -269,7 +264,6 @@ class EmbeddingsOps:
             )
 
         res = self.tracks_collection.bulk_write(bulk_request)
-        print("finished tracks: ", res)
 
     def start(self):
         try:
