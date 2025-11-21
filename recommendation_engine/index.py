@@ -63,7 +63,7 @@ async def lifespan(app: FastAPI):
         print("MongoDB connection initialized.")
 
     embeddingModel = None
-    with open("server/rec_models/embeddingModel.pkl", "rb") as f:
+    with open(settings.EMBEDDINGS_MODEL, "rb") as f:
         embeddingModel = pkl.load(f)
 
     app.state.embeddingModel = embeddingModel
@@ -122,7 +122,7 @@ def updateTracksDb(request: Request):
     try:
         print("trying to update tracks database")
         tracks = Tracks(
-            "server/data/processed/tracks_data_final.csv",
+            "data/processed/tracks_data_final.csv",
             request.app.state.tracks_collection,
         )
 

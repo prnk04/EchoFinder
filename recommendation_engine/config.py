@@ -44,6 +44,7 @@ class Settings(BaseSettings):
     SAMPLE_USER_SONG_INTERACTION_PATH: str
     SAMPLE_USER_FAV_ARTIST_PATH: str
     SAMPLE_USER_FAV_GENRES_PATH: str
+    EMBEDDINGS_MODEL: str
 
 
 settings = Settings()
