@@ -10,7 +10,7 @@ Built as a comprehensive demonstration of modern full-stack development, EchoFin
 
 ## Demo
 
-🎥 **[View Live Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/Demo.gif)**
+🎥 **[View Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/Demo.gif)**
 
 ## List of Contents
 
