@@ -19,7 +19,7 @@ This mobile app is part of the larger EchoFinder music application:
 
 ## Demo
 
-For a complete demonstration of the EchoFinder ecosystem including this mobile app in action, visit the [EchoFinder main repository](https://github.com/prnk04/echofinder).
+See a complete demonstration of the EchoFinder ecosystem including this mobile app in action [Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/Demo.gif).
 
 ## Features
 
@@ -106,12 +106,7 @@ cp .env.example .env
 Example `.env` file:
 
 ```env
-PORT=3000
-MONGO_URI=mongodb+srv://...
-FASTAPI_URL=http://localhost:8000
-SPOTIFY_CLIENT_ID=...
-SPOTIFY_CLIENT_SECRET=...
-LASTFM_API_KEY=...
+API_URL=<your_express_backend_url>
 ```
 
 4. Ensure backend services are running
@@ -229,7 +224,7 @@ The mobile app communicates exclusively with the Express API Gateway, which aggr
 
 The mobile app is fully functional with core features implemented and integrated with the backend services.
 
-## Roadmap
+## Further Enhancements
 
 Future enhancements planned for the mobile app:
 
@@ -265,5 +260,3 @@ This project is licensed under the MIT License
 
 Priyanka Pandey  
 📧 prnkpandey00@gmail.com
-
-Project Link: [https://github.com/prnk04/EchoFinder/tree/main/mobile](https://github.com/prnk04/EchoFinder/tree/main/mobile)

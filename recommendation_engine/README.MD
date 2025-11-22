@@ -233,7 +233,7 @@ The system uses a pure content-based approach that relies on the semantic simila
 
 The core recommendation engine is functional and integrated with the EchoFinder ecosystem.
 
-## Roadmap
+## Further Enhancements
 
 Future enhancements planned for the recommendation system:
 

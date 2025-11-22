@@ -10,7 +10,21 @@ Built as a comprehensive demonstration of modern full-stack development, EchoFin
 
 ## Demo
 
-🎥 **[View Live Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/EchoFinder_ScreenRecording.mp4)** 
+🎥 **[View Live Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/Demo.gif)**
+
+## List of Contents
+
+- [Architecture](#Architecture)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [How It Works](#how-it-works)
+- [Key Features](#key-features)
+- [Development Status](#key-features)
+- [Further Enhancements](#further-enhancements)
+- [Documentation](#documentation)
+- [Data & API Credits](#data--api-credits)
+- [License](#license)
+- [Contact](#contact)
 
 ## Architecture
 
@@ -251,16 +265,15 @@ EMBEDDINGS_MODEL=rec_models/embeddingModel
 PORT=3000
 MONGO_URI=mongodb://localhost:27017/echofinder
 FASTAPI_URL=http://localhost:8000
-SPOTIFY_CLIENT_ID=your_spotify_client_id
-SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-LASTFM_API_KEY=your_lastfm_api_key
-NODE_ENV=development
+SPOTIFY_CLIENT_ID=<your_spotify_client_id>
+SPOTIFY_CLIENT_SECRET=<your_spotify_client_secret>
+LASTFM_API_KEY=<your_lastfm_api_key>
 ```
 
 **Mobile App** (`/mobile/.env`):
 
 ```env
-API_URL=http://localhost:3000
+API_URL=<your_express_server_url>
 ```
 
 ### External API Setup
@@ -343,7 +356,7 @@ API_URL=http://localhost:3000
 
 All core features are implemented and functional. The system is ready for demonstration and further enhancement.
 
-## Roadmap
+## Further Enhancements
 
 ### Short Term
 
@@ -372,7 +385,7 @@ Each service also its own detailed README:
 
 - [Mobile App README](/mobile/README.md)
 - [API Gateway README](/express_backend/README.md)
-- [Recommendation Engine README](/recommendation_engine/README.md)
+- [Recommendation Engine README](/recommendation_engine/README.MD)
 
 ## Data & API Credits
 
@@ -403,10 +416,6 @@ This project is licensed under the MIT License
 📧 prnkpandey00@gmail.com  
 🔗 [GitHub](https://github.com/prnk04)  
 🔗 [LinkedIn](https://www.linkedin.com/in/priyankapandey03/)
-
----
-
-**Project Link**: [https://github.com/prnk04/EchoFinder](https://github.com/prnk04/EchoFinder)
 
 ---
 
