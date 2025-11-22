@@ -10,9 +10,7 @@ Built as a comprehensive demonstration of modern full-stack development, EchoFin
 
 ## Demo
 
-🎥 **[View Live Demo](#)** _(Add your demo video/GIF here)_
-
-📱 **[Download APK](#)** _(Optional: Add link to installable APK)_
+🎥 **[View Live Demo](https://github.com/prnk04/EchoFinder/blob/main/Demo/EchoFinder_ScreenRecording.mp4)** 
 
 ## Architecture
 
